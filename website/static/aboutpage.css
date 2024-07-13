@@ -1,0 +1,772 @@
+
+/*First Section Begins
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+nav .logo{
+    width: 100px;
+    margin-left: 60px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 160px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+/* First Section Ends
+
+
+/*People Starts
+.aboutpeople{
+    width: 100%;
+    height: 75vh;
+    padding: 78px 0px;
+    background-color: #091322;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.people-image{
+    width: 400px;
+}
+
+.people-text{
+    width: 550px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.people-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.people-text h5{
+    color: #4fc3dc;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.people-text p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.people{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+/*People Ends*/
+
+/* Second Section Ends*/
+
+
+/*Footer Begins 
+.footer{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+footer{
+    background: #343434;
+    padding-top: 50px;
+}
+
+.footer-info{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 33.33%;
+}
+
+.footer-content h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+
+.list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.list li a:hover{
+    color: orange;
+}
+
+.bottom-bar{
+    background: orange;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+/*Footer Ends 
+
+
+
+.homesecond{
+    position: relative;
+    background: #1b1b1b;
+    height: 100vh;
+    z-index: -1;
+}
+
+/*Background Animation Begins
+.wrapper span{
+    position: absolute;
+    bottom: -180px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    background-color: #18191f;
+    box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+    animation: animate 11s linear infinite;
+}
+
+.wrapper span:nth-child(1){
+    left: 60px;
+    animation-delay: 0.6s;
+}
+
+.wrapper span:nth-child(2){
+    left: 10%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+}
+
+.wrapper span:nth-child(3){
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.wrapper span:nth-child(4){
+    left: 30%;
+    animation-delay: 5s;
+    width: 80px;
+    height: 80px;
+}
+
+.wrapper span:nth-child(5){
+    left: 40%;
+    animation-delay: 1s;
+}
+
+.wrapper span:nth-child(6){
+    left: 50%;
+    animation-delay: 7s;
+}
+
+.wrapper span:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;
+    width: 100px;
+    height: 100px;
+}
+
+.wrapper span:nth-child(8){
+    left: 70%;
+    animation-delay: 8s;
+}
+
+.wrapper span:nth-child(9){
+    left: 80%;
+    animation-delay: 6s;
+    width: 90px;
+    height: 90px;
+}
+
+.wrapper span:nth-child(10){
+    left: 90%;
+    animation-delay: 4s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+        opacity: .7;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+/*Background Animation Ends
+
+.homethird h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 80px;
+}
+
+.missions{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+
+.mission{
+    background-color: #343434;
+    color: white;
+    width: 300px;
+    height: 550px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.mission h2{
+    display: flex;
+    justify-content: center;
+}
+
+.mission p{
+    display: flex;
+    justify-content: center;
+}
+
+.mission:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.mission-image{
+    background-color: blue;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}*/
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    font-family: Playfair Display;
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Navbar*/
+header{
+    width: 1140px;
+    max-width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+header a{
+    margin-right: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    transform: 0.5s;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: orange;
+    transition: .5s;
+}
+
+.logo{
+    width: 80px;
+}
+
+
+/*Hero*/
+.hero{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero .back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .hero .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .hero .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.hero .content{
+    width: 600px;
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    opacity: 1;
+    animation: headeranimate 2s ease;
+}
+
+@keyframes headeranimate{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%)
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.hero .content h1{
+    font-size: 5rem;
+    margin-bottom: 30px;
+}
+
+.hero .content .h1US{
+    color: orange;
+}
+
+.hero .content h5{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/*.hero .heroshadow{
+    position: absolute;
+    bottom: -150;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 58%, hsla(0, 0%, 0%) 78%);
+}*/
+
+/*Background Animation*/
+
+.bubbles{
+    position: relative;
+    display: flex;
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: orange;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(80, 44, 0), 0 0 50px orange, 0 0 100px orange;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(150s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+    background: white;
+    box-shadow: 0 0 0 10px rgb(70, 70, 70), 0 0 50px white, 0 0 100px white;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(175vh) scale(0);
+    }
+    100%{
+        transform: translateY(-15vh) scale(1);
+    }
+}
+
+/*Missions*/
+
+.missions{
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.missions h1{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 5;
+    color: orange;
+}
+
+.wrapper{
+    padding: 10px 10%;
+}
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -50;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    margin-bottom: 10px;
+}
+
+.overlay h3{
+    font-weight: 50;
+    margin-bottom: 20px;
+    margin-top: 80%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: orange;
+}
+
+.overlay a{
+    color: #262626;
+    text-decoration: none;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+    transition: 0.5s;
+}
+
+.overlay a:hover{
+    background: transparent;
+    color: orange;
+    border-style: solid;
+    border-color: orange;
+    transition: 0.5s;
+}
+
+.box:hover img{
+    transform: scale(1.2);
+}
+
+.box:hover .overlay{
+    height: 100%;
+}
+
+/*People*/
+.aboutpeople{
+    width: 100%;
+    height: 75vh;
+    padding: 78px 0px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.people-image{
+    width: 450px;
+    height: 500px;
+}
+
+.people-text{
+    width: 600px;
+}
+
+.people-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-left: -36px;
+}
+
+.people-text .h1Haider{
+    color: orange;
+    margin-left: 25px;
+}
+
+.people-text h5{
+    color: orange;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.people-text p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.people{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+/*Footer*/ 
+.footer{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+}
+
+footer{
+    background: #1a1a1a;
+    padding-top: 50px;
+}
+
+.footer-info{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 50%;
+
+}
+
+.footer-content h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: orange;
+}
+
+.footer-content p{
+    width: 300px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+
+.list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.list li a:hover{
+    color: orange;
+}
+
+.bottom-bar{
+    background: orange;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: black;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}

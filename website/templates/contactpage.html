@@ -1,0 +1,276 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'contactpage.css' %}">
+</head>
+<body>
+    <!--Navbar Starts
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'service' %}">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      Navbar Ends-->
+
+
+      <!--Form Begins
+      <form method="POST" action="{% url 'contact' %}" class="container">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">First Name</label>
+          <input name="fname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="John">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+          <input name="lname" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Davis">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input name="useremail" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Default file input example</label>
+          <input name="userresume" class="form-control" type="file" id="formFile">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      Form Ends-->
+
+
+      <!--First Section Starts
+      <div class="hero">
+
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="{% static 'images/contact_background.mp4' %}" type="video/mp4">
+        </video>
+
+        <nav>
+          <a href="{% url 'home' %}">
+            <img src="{% static 'images/logo.png' %}" class="logo">
+          </a>
+          <ul>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+            <li><a href="{% url 'service' %}">SERVICES</a></li>
+          </ul>
+        </nav>
+
+        <div class="content">
+          <h1>Contact</h1>
+        </div>
+        
+      </div>
+      First Section Ends
+
+      Application Form Begins
+      <div class="contact-container">
+        <form method="POST" action="{% url 'contact' %}" class="contact-info">
+          {% csrf_token %}
+          <div class="contact-info-title">
+            <h2>Apply Now</h2>
+          </div>
+          <input type="text" name="fname" placeholder="Your First Name" class="contact-inputs" required>
+          <input type="text" name="lname" placeholder="Your Last Name" class="contact-inputs" required>
+          <input type="email" name="useremail" placeholder="Your Email" class="contact-inputs" required>
+          <input type="file" name="userresume" placeholder="Your Resume" class="contact-inputs" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      Application Form Ends
+
+
+      Footer Begins
+      <div class="footer">
+        <footer>
+          <div class="footer-info container">
+  
+            <div class="footer-content">
+              <h3>Contact Us</h3>
+              <p>Email:Info@example.com</p>
+              <p>Phone: 1234566786544444</p>
+              <p>Address: America</p>
+            </div>
+  
+            <div class="footer-content">
+              <h3>Quick Links</h3>
+              <ul class="list">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'service' %}">Services</a></li>
+              </ul>
+            </div>
+  
+          </div>
+  
+          <div class="bottom-bar">
+            <p>&copy; 2024 Novaris Tech Services. All Rights Reserved</p>
+          </div>
+        </footer>
+      </div>
+      Footer Ends-->
+
+
+      <!--Navbar-->
+      <header>
+        <nav>
+          <a href="{% url 'home' %}"><image src="{% static 'images/logo.png' %}" class="logo"></a>
+          <a href="{% url 'about' %}">About Us</a>
+          <a href="{% url 'service' %}">Services</a>
+          <a href="{% url 'contact' %}">Contact Us</a>
+        </nav>
+      </header>
+
+
+      <!--Hero-->
+      <div class="hero">
+
+        <video autoplay loop muted plays-inline class="back-video">
+          <source src="{% static 'images/contactbackground.mp4' %}" type="video/mp4">
+        </video>
+
+        <div class="content">
+          <h1>Contact <span class="h1US">Us</span></h1>
+        
+          <h5>
+            To learn more about Novaris Tech Services or to discuss our offerings, please contact us via our website or phone. If you're interested in joining our 
+            innovative team, visit our careers page to explore and apply for available positions. We look forward to connecting with talented professionals eager to 
+            make an impact.
+          </h5>
+        </div>
+      </div>
+
+      <!--Position Background Animation-->
+      <div class="wrapper">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!--Positions-->
+      <div class="positions">
+        <h1>Positions</h1>
+
+        <div class="positioncards container-fluid">
+          <div class="position">
+            <div class="position-image position-image-1"></div>
+            <h2>Title</h2>
+            <p>Text</p>
+          </div>
+  
+          <div class="position">
+            <div class="position-image position-image-2"></div>
+            <h2>Title</h2>
+            <p>Text</p>
+          </div>
+  
+          <div class="position">
+            <div class="position-image position-image-3"></div>
+            <h2>Title</h2>
+            <p>Text</p>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <!--Form-->
+      <div class="contact-container">
+        <form method="POST" action="{% url 'contact' %}" class="contact-info" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="contact-info-title">
+            <h2>Apply Now</h2>
+          </div>
+
+          <div class="contact-inputs">
+            <input type="text" name="name" required>
+            <span>Name</span>
+            <i></i>
+          </div>
+
+          <div class="contact-inputs">
+            <input type="text" name="position" required>
+            <span>Position</span>
+            <i></i>
+          </div>
+          
+          <div class="contact-inputs">
+            <input type="email" name="email" required>
+            <span>Email</span>
+            <i></i>
+          </div>
+          
+          <div class="contact-inputs">
+            <input type="text" name="message" required>
+            <span>Message</span>
+            <i></i>
+          </div>
+          
+          <span class="resumetitle">Your Resume</span>
+          <input type="file" class="contact-file" name="file" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+
+      <!--Footer-->
+      <div class="footer">
+        <footer>
+          <div class="footer-info container">
+  
+            <div class="footer-content">
+              <h3>Contact Us</h3>
+              <p>Email: novaristech@gmail.com</p>
+              <p>Phone: 703-474-9409</p>
+              <p>Address: America</p>
+            </div>
+  
+            <div class="footer-content">
+              <h3>Quick Links</h3>
+              <ul class="list">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'service' %}">Services</a></li>
+              </ul>
+            </div>
+  
+          </div>
+  
+          <div class="bottom-bar">
+            <p>&copy; 2024 Novaris Tech Services. All Rights Reserved</p>
+          </div>
+        </footer>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
